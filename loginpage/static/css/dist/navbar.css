@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap");
+body,
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #212121;
+  padding-left: 30px;
+  font-family: "IM Fell Double Pica";
+  font-style: italic;
+  font-size: large;
+  box-shadow: 5px 5px #e7d8c1;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  color: #f7e0d2;
+  font-size: 0.875rem;
+  display: block;
+  text-decoration: none;
+  padding: 6px 15px;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: table;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+  transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+}
+section h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+}
+
+#one {
+  background: #212121;
+}
+
+#two {
+  background: #222627;
+  background-size: cover;
+}
+
+#three {
+  background: #18171b;
+  background-size: cover;
+}
+
+a[id=one]:target ~ #one {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+a[id=two]:target ~ #two {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+a[id=three]:target ~ #three {
+  -webkit-transform: translate3d(0, -200%, 0);
+  transform: translate3d(0, -200%, 0);
+}
+
+.logo {
+  padding-right: 460px;
+}
+
+.hello-msg {
+  color: white;
+  margin-left: 10px;
+  padding-left: 320px;
+}
+
+.card {
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 0px;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 150px;
+  color: #f8f2bf;
+  background: linear-gradient(104deg, rgba(44, 35, 19, 0.987) 10%, rgba(20, 18, 15, 0.987) 99%);
+  background-size: 150% 150%;
+  animation: gradient 5s ease infinite;
+  /*box-shadow: 5px 10px rgb(192, 192, 167);*/
+}
+.card th,
+.card td {
+  padding: 10px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 10% 10%;
+  }
+  70% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+#hd {
+  font-style: italic;
+  font-size: 30px;
+  margin-top: 60px;
+  text-decoration: underline;
+  align-items: center;
+  text-align: center;
+  font-family: "IM Fell Double Pica";
+}
+
+#hd2 {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#pp {
+  font-style: italic;
+}
+
+.logout {
+  margin-right: 50px;
+  padding-left: 20px;
+  color: #f7e0d2;
+}
+
+.dinner {
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 0px;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  color: #f8f2bf;
+  background: linear-gradient(104deg, #222627 10%, #030200 99%);
+  background-size: 150% 150%;
+  animation: gradient 5s ease infinite;
+  /*box-shadow: 5px 10px rgb(192, 192, 167);*/
+}
+.dinner th,
+.dinner td {
+  padding: 5px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 10% 10%;
+  }
+  70% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+.logout {
+  margin-right: 50px;
+  padding-left: 20px;
+  color: #f7e0d2;
+}
+
+.des {
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 0px;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 150px;
+  padding-bottom: 50px;
+  color: #f8f2bf;
+}
+.des #hd3 {
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #f8f2bf;
+}
+.des #pp2 {
+  font-style: italic;
+  color: #f8f2bf;
+}

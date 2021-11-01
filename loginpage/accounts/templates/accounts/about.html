@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Indian Plate</title>
+    <link href="{% static '/css/carousel.css' %}" rel="stylesheet" />
+
+    <script src="{% static 'js/scriptabout.js' %}"></script>
+  </head>
+  <header>
+    <a href="{% url 'home' %}">
+      <img
+        class="logo"
+        src="{% static 'images/2.1.png' %}"
+        alt="logo"
+        width="50"
+        height="50"
+      />
+    </a>
+    <p id="story">Our Story</p>
+  </header>
+  <body>
+    <div class="begin">
+      <h1>The Journey</h1>
+      <p id="jor">
+        A The Indian Plate is a progression of rare and beautiful ingredients
+        where texture, flavour and harmony is paramount. Continually inspired by
+        nature, the creative process for chef Monish Shetty begins in working
+        closely with the farmers, fishermen, producers and artisans who
+        cultivate bespoke produce exclusively for us For each dish, the growth
+        of every element and the selection of every ceramic piece is carefully
+        considered and crafted for its role in the dining experience.
+      </p>
+    </div>
+
+    <div class="mid">
+      <p id="space"></p>
+      <p id="spi">
+        The restaurant is an organic space reflective of Monish Shetty's nature
+        inspired cuisine. The interplay of textures and colour brings life and a
+        vibrance that embraces the restaurant’s place in the dress circle of
+        Indian land. An ode to the Indian landscape, from the vast ocean floor,
+        to the cracked bark of the Gulmohar tree, every detail from the ground
+        up has been thoughtfully considered.
+      </p>
+      <p id="spi">
+        The Indian Plate showcases inventive Indian cuisine by complementing the
+        flavours and traditions of India with global ingredients and techniques.
+      </p>
+      <p id="spi">
+        The Indian Plate has been featured in the World's 50 Best Restaurants
+        2019. It has been awarded the San Pellegrino Best Restaurant Award in
+        India by Asia's 50 Best Restaurants 2020 for the Sixth consecutive year.
+        It has also been rated as the No.1 Restaurant in India by TripAdvisor
+        consistently from 2014 - 2019. Indian Accent has been awarded the Number
+        1 Restaurant in India by Condé Nast Traveller and Himalayan Sparkling
+        Top Restaurant Awards.
+      </p>
+    </div>
+
+    <div class="end">
+      <p id="gap"></p>
+      <p id="cont">
+        The Indian Plate, modern Indian food isn’t about returning to regional
+        recipes and simply plating them with new tweaks. It demands revisiting
+        traditional cooking and ingredients with purpose, and discovering ways
+        in which these can build cross-cultural bridges. Local flavours and
+        age-old practices meet innovation and technique, overcoming an
+        often-homogenized definition of “Indian food” to re-imagine a new wave
+        of modern Indian cuisine.
+      </p>
+    </div>
+  </body>
+</html>

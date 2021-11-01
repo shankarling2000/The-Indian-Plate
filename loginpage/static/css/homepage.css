@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  color: #f7e4d8;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+  padding-right: 100px;
+  padding-bottom: 150px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  font-family: "IM Fell Double Pica";
+  font-weight: 500;
+  font-size: larger;
+  display: inline-block;
+  margin-bottom: 150px;
+  background-color: black;
+  opacity: 0.7;
+  padding: 10px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 0px 1px #f7e0d2 inset;
+}
+
+.nav_links li a {
+  transition: all 3s to 0s;
+}
+
+.nav_links li :nth-child(1) {
+  padding: 0px 00px 0px 0px;
+}
+.nav_links li a:hover {
+  color: #c59374;
+  text-decoration: underline;
+}
+
+body {
+  background: linear-gradient(-45deg, #56426e, #302755, #355c5e, #1f4c66);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  background: url("/static/images/biriyani.jpg");
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 10% 10%;
+  }
+  70% {
+    background-position: 100% 40%;
+  }
+  100% {
+    background-position: 00% 100%;
+  }
+}
+
+.cont {
+  color: aliceblue;
+}
+
+.main {
+  color: rgb(182, 218, 241);
+  align-items: centre;
+  font-size: 500%;
+
+  font-family: "IM Fell Double Pica";
+  display: inline-block;
+  margin: auto;
+  padding-left: 100px;
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 300px;
+  padding-bottom: 150px;
+  font-family: "IM Fell Double Pica";
+  font-weight: bold;
+
+  /*   padding: 2em 0em; */
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-right: 40px;
+  opacity: 0.8;
+}
+
+h1 {
+  text-align: left;
+  color: #444;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.4em;
+  font-size: 1em;
+}
+
+p {
+  text-align: left;
+  color: #444;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  margin: 0 0 2em;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+  color: rgb(248, 229, 229);
+  border: 4px solid#f7e0d2;
+  box-shadow: 0px 0px 0px 1px rgb(46, 83, 80) inset;
+  background: rgb(0, 0, 0);
+
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.effect01:hover {
+  border: 4px solid rgb(0, 0, 0);
+  background: #f7e0d2;
+  box-shadow: 0px 0px 0px 4px rgb(0, 0, 0) inset;
+  color: #15191c;
+}
+
+/*btn_text*/
+.effect01 span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+.effect01:hover span {
+  letter-spacing: 0.13em;
+  color: #333;
+}
+
+/*highlight*/
+.effect01:after {
+  background: #fff;
+  border: 0px solid #000;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); /*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:hover:after {
+  background: #fff;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.contact {
+  padding-left: 1300px;
+}

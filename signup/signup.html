@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="stylesup.css" rel="stylesheet">
+    <script src="scriptup.js"></script>
+</head>
+<body>
+   <a href="../index.html">
+   <img  class="logo" src="logoqb.png" alt="logo" width="150" height="150">
+</a>
+    <div class="overlay">
+   
+        <form method="POST" action="">
+           <!--   con = Container  for items in the form-->
+           <div class="con">
+           <!--     Start  header Content  -->
+           <header class="head-form">
+              <h2>Sign Up</h2>
+              <!--     A welcome message or an explanation of the login form -->
+              <p>Register here using your username and password</p>
+
+           </header>
+           <!--     End  header Content  -->
+           <br>
+           <div class="field-set">
+            
+              <!--   user name -->
+                 <span class="input-item">
+                   <i class="fa fa-user-circle"></i>
+                 </span>
+                <!--   user name Input-->
+                 <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+             
+              <br>
+             
+                   <!--   Password -->
+             
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+               </span>
+              <!--   Password Input-->
+              <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+             
+        <!--      Show/hide password  -->
+             <span>
+            </span>
+            <!--   Password Input-->
+            <input class="form-input" type="confirm password" placeholder="Confirm Password" id="pwd"  name="confirm password" required>
+           
+      <!--      Show/hide password  -->
+           <span>
+                <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+             </span>
+             
+             
+              <br>
+        <!--        buttons -->
+        <!--      button LogIn -->
+              <button class="sign-in"> Sign up </button>
+           </div>
+          
+        <!--   other buttons -->
+         
+             
+        <!--   End Conrainer  -->
+          </div>
+          
+          <!-- End Form -->
+        </form>
+        </div>
+</body>
+</html>
