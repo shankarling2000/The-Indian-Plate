@@ -1,3 +1,4 @@
+from django.contrib.auth import decorators
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.forms import inlineformset_factory
@@ -65,3 +66,12 @@ def logoutUser(request):
 
 def about(request):
     return render(request, 'accounts/about.html')
+
+def TableRes(request):
+    return render(request, 'accounts/TableRes.html')
+
+def Contactus(request):
+    return render(request,'accounts/Contactus.html')
+
+def receipt(request):
+    return render(request,'accounts/receipt.html')

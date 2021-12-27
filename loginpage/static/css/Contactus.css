@@ -1,0 +1,98 @@
+body{
+  background: #212121;
+}
+
+h1{
+    
+  font-style: italic;
+  font-size: 30px;
+  font-weight: lighter;
+  width: 300px;
+  color: #f7e0d2;
+  font-family: "IM Fell Double Pica";
+  position: absolute;
+  left: 40%;
+  margin-top: 50px;
+}
+
+.contactcontainer{
+    margin: none;
+    padding: none;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+
+.hello-msg{
+
+    font-style: italic;
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+    padding-top: 8px;
+    padding-right: none;
+    padding-left: 20%;
+    margin-top: 40px;
+    font-family: "IM Fell Double Pica";
+  }
+
+
+  .logout {
+    margin-top: 5px;
+    margin-right: 10px;
+    padding-left: none;
+    font-weight: lighter;
+    font-size: large;
+    color: #f7e0d2;
+    font-family: "IM Fell Double Pica";
+  }
+  
+  .logo {
+    margin: 25px;
+    margin-left: 10px;
+    padding-right: 460px;
+    height: 80px;
+    width: 80px;
+  }
+
+.bordercontact{
+    border: wheat;
+    border-top: 4px;
+    border-style: solid;
+    left: 0%;
+}
+
+.footercontact{
+  position: absolute;
+  top: 80%;
+}
+
+.bgimg{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  animation-name: bgimgani;
+  animation-duration: 2s;
+}
+
+@keyframes bgimgani{
+
+  from {transform: translateX(0);}
+    to{ height: streach;
+      width: streach; transform: translateX(1000px);}
+    }
+
+.bgimg:hover{
+  opacity: 0.5;
+  transition: 2s;
+}
+
+
+
+

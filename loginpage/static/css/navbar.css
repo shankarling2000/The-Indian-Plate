@@ -102,6 +102,7 @@ a[id="three"]:target ~ #three {
   padding-left: 320px;
 }
 
+
 .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -177,8 +178,8 @@ a[id="three"]:target ~ #three {
 }
 
 .logout {
-  margin-right: 50px;
-  padding-left: 20px;
+  margin-right: none;
+  padding-left: 10px;
   color: #f7e0d2;
 }
 
@@ -250,4 +251,5 @@ a[id="three"]:target ~ #three {
   font-style: italic;
   color: #f8f2bf;
 }
+
 /*# sourceMappingURL=navbar.css.map */

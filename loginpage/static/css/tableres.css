@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap");
+
+
+html, body{
+  
+  background: linear-gradient(104deg, rgba(44, 35, 19, 0.987) 10%, rgba(20, 18, 15, 0.987) 99%);
+}
+
+
+.container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.hello-msg{
+
+  font-style: italic;
+  font-size: 18px;
+  font-weight: lighter;
+  color: white;
+  display: flex;
+  padding-top: 20px;
+  padding-right: none;
+  padding-left: 20%;
+  font-family: "IM Fell Double Pica";
+}
+
+
+.logout {
+  margin-right: 10px;
+  padding-left: none;
+  font-weight: lighter;
+  font-size: large;
+  color: #f7e0d2;
+  font-family: "IM Fell Double Pica";
+}
+
+
+.logo {
+  margin: 25px;
+  padding-right: 460px;
+}
+
+
+#bookbody{
+  font-family: "IM Fell Double Pica";
+  font-style: italic;
+  color: #f7e0d2;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 100px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  background-color: #212121;
+  border: #e7d8c1;
+  border-width: 2px 2px;
+  border-style: solid;
+}
+
+#myDate, #appt {
+color: grey;
+padding: 10px;
+background-color: silver;
+border: none;
+margin: 10px;
+margin-left: 5px;
+border-radius: 2%;
+font-family: "IM Fell Double Pica";
+box-shadow: 0px 0px 0px 1px #f7e0d2 inset;
+display: inline-block;
+}
+
+
+#myDate:hover{
+  background-color: snow;
+  cursor: pointer;
+
+}
+#appt:hover{
+  background-color: snow;
+  cursor: pointer;
+}
+
+.navlinks2{
+  font-family: "IM Fell Double Pica";
+  color: #e7d8c1;
+  font-weight: 500;
+  font-size: small;
+  display: inline-block;
+  padding: 6px;
+  margin-top: 2px;
+  background-color: black;
+  opacity: 0.7;
+  box-shadow: 0px 0px 0px 1px #f7e0d2 inset;
+  opacity: 0.5;
+}
+
+.navlinks2:hover{
+  transition: 40ms;
+  opacity: 1;
+}
+
+.himan{
+  border:wheat;
+  border-top: 4px;
+  border-style: solid;
+}
+
+#cnfmd{
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family:"IM Fell Double Pica"; 
+}
+
+
+.bookhead{
+  font-family:"IM Fell Double Pica";
+  color: #e7d8c1;
+  font-weight: 500;
+  font-size: 30px;
+  position: absolute;
+  left: 40%;
+}
+
+.footer1{
+  position: absolute;
+  left: 92%;
+  top: 95%;
+}

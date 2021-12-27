@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="{% static '/css/TableRes.css' %}" rel="stylesheet">
+    <title>Reservations</title>
+</head>
+
+<body">
+    <div class=" container">
+        <span><a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/2.1.png' %}" alt="logo" width="50" height="50">
+        </span>
+        </a>
+        <ul>
+            <li><span class="hello-msg">Namaste, {{request.user}}
+                    <a class="logout" href="{% url 'logout' %}">Logout</a></span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div class="himan">
+            <main id="bookbody" class="container2">
+
+                <label for=" date">SELECT A DATE</label>
+                <input type="date" id="myDate">
+
+                <label for="appt">SELECT A TIME</label>
+                <input type="time" id="appt" name="appt">
+
+                <button onclick="confirmation()" class="navlinks2">BOOK NOW</button>
+                <p id="cnfm"></p>
+
+                <script id="cnfmed">
+                    function confirmation() {
+                        document.getElementById("cnfm").innerHTML = "Booking Confirmed, Thank you!";
+                    }
+                </script>
+            </main>
+
+        </div>
+
+        <div class="bookhead">
+            <p>BOOK YOUR TABLE NOW</p>
+        </div>
+
+
+    </div>
+    <footer class="footer1">
+        <a href="{% url 'Contactus' %}">
+            <img class="contact" src="{% static 'images/contact.png' %}" alt="logo" width="120" />
+        </a>
+    </footer>
+
+    <script>
+
+        function storedetails() {
+            timeofbooking = Date.now();
+            timeforbooking = document.getElementById("myDate").value;
+            dateforbooking = document.getElementById("appt").value;
+        }
+    </script>
+    </body>
+
+</html>

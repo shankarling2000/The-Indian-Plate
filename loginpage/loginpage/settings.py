@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts'
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'loginpage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,11 +82,23 @@ WSGI_APPLICATION = 'loginpage.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tip',
+        'USER': 'root',
+        'PASSWORD': 'iam@1961',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    },
 
+    'restdb': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'restdb',
+        'USER': 'root',
+        'PASSWORD': 'iam@1961',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    
+    } } 
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

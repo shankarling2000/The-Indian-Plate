@@ -12,237 +12,243 @@
   <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
   <script src="{% static 'jFs/scriptdash.js' %}"></script>
 </head>
+
 <body>
 
-<nav>
+  <nav>
 
-  <div class="container">
-    <ul>
-      <a href="{% url 'home' %}">
-        <img  class="logo" src="{% static 'images/2.1.png' %}" alt="logo" width="50" height="50">
-    </a>
-      <li><a href="#one">APPETIZERS</a></li>
-      <li><a href="#two">DINNER MENU</a></li>
-      <li><a href="#three">DESSERTS</a></li>
-      <span class="hello-msg">Namaste, {{request.user}}
-      <a  class="logout" href="{% url 'logout' %}">Logout</a></span>
-    </ul> 
-  </div>
-</nav>
+    <div class="container">
+      <ul>
+        <a href="{% url 'home' %}">
+          <img class="logo" src="{% static 'images/2.1.png' %}" alt="logo" width="50" height="50">
+        </a>
+        <li><a href="#one">APPETIZERS</a></li>
+        <li><a href="#two">DINNER MENU</a></li>
+        <li><a href="#three">DESSERTS</a></li>
+        <li class="res"><a href="{% url 'TableRes' %}">RESERVATIONS</a></li>
 
-<section id="one">
- 
-  <table class="card" width="100%">
-  
-    <tr id="hd">
-      <th>Soups</th>
-      <th>Starters </th>
-     </tr>
-    <tr>
-     <td id="hd2">Rainbow Soup</td>   
-     <td id="hd2">Masala Papad </td> 
-    </tr>
-      
-    <tr>
-      <td id ="pp">Spicy innovative manchow with & different veggies </td>
-      <td id ="pp">Finely grated Veggies seasoned over an exotic salted masala wafe </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-    </tr>
+        <span class="hello-msg">Namaste, {{request.user}}
+          <a class="logout" href="{% url 'logout' %}">Logout</a></span>
+      </ul>
+    </div>
+  </nav>
 
-    <tr>
-      <td id="hd2">The Southern Thupka </td>
-      <td id="hd2"> Honey Chilli Lotus Steam </td>
-    </tr>
+  <section id="one">
 
-   <tr>
-<td id ="pp">Traditional Indian Soup</td>
-<td id ="pp">Sliced lotus steam tossed in honey chilli </td>
-   </tr>
-   <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
-   <tr>
-    <td id="hd2"> Lemon Chilli Coriander  </td>
-    <td id="hd2"> Celebrity Shrooms  </td>
-  </tr>
-<tr>
-  <td id ="pp">Fresh and tangy soup </td>    
-  <td id ="pp">Crispy fried mushrooms tossed in peanut sauce </td>  
- 
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-    </tr>
- <tr>
-  <td id="hd2">Chilli Coconut </td>
- <td id="hd2">Pan fried Sweet potato </td> 
- </tr>
+    <table class="card" width="100%">
 
- <tr>
-  <td id ="pp">Flavored coconut broth with ginger, chilli, corn and broccoli </td>
-  <td id ="pp">Grilled sweet potato with homemade Indie spice  </td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
-   <tr>
-    <td id="hd2">Roasted Tomato Soup</td>
-   <td id="hd2">Fiery Potatoes </td> 
-   </tr>
+      <tr id="hd">
+        <th>Soups</th>
+        <th>Starters </th>
+      </tr>
+      <tr>
+        <td id="hd2">Rainbow Soup</td>
+        <td id="hd2">Masala Papad </td>
+      </tr>
 
- <tr>
-  <td id ="pp">Rich, bold, and flavorful Tomato Soup made with roasted cherry tomatoes, garlic, and basil. </td>
-  <td id ="pp">Wedges tossed into spicy onion chilli combination </td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
-  </table>
-</section>
+      <tr>
+        <td id="pp">Spicy innovative manchow with & different veggies </td>
+        <td id="pp">Finely grated Veggies seasoned over an exotic salted masala wafe </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
 
-<section id="two">
-  <table class="dinner" width="100%" >
-  
-    <tr id="hd">
-      <th>Sabji</th>
-      <th>Indian Breads</th>
-      <th>Chawal Ki Dawat (Rice)</th>
-     </tr>
-    <tr>
-     <td id="hd2">Hari Makai Khas </td>   
-     <td id="hd2">Tandoori Roti  </td> 
-     <td id="hd2">Veg Pulao </td> 
-    </tr>
-      
-    <tr>
-      <td id ="pp">American Corns Tossed in Aromatic Spinach Gravy  </td>
-      <td id ="pp">A round flatbread made from wholemal flour </td>
-      <td id ="pp">Cooked fragrant basmati rice with aromatic spices, herbs and sometimes stock.  </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-    </tr>
+      <tr>
+        <td id="hd2">The Southern Thupka </td>
+        <td id="hd2"> Honey Chilli Lotus Steam </td>
+      </tr>
 
-    <tr>
-      <td id="hd2">  Bhindi Do Pyaza  </td>
-      <td id="hd2"> Hari Mirch ki Roti </td>
-      <td id="hd2">Tawa Pulav </td>
-    </tr>
+      <tr>
+        <td id="pp">Traditional Indian Soup</td>
+        <td id="pp">Sliced lotus steam tossed in honey chilli </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td id="hd2"> Lemon Chilli Coriander </td>
+        <td id="hd2"> Celebrity Shrooms </td>
+      </tr>
+      <tr>
+        <td id="pp">Fresh and tangy soup </td>
+        <td id="pp">Crispy fried mushrooms tossed in peanut sauce </td>
 
-   <tr>
-<td id ="pp">Finger cut okra and onion Cooked in garlic with special indian masala </td>
-<td id ="pp">Soft roti seasoned with chillies for an exquisite dine  </td>
-<td id ="pp">Pulav cooked with the flavours of pav bhaji masala and served steaming hot  </td>
-   </tr>
-   <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
-   <tr>
-    <td id="hd2"> Paneer kurchan  </td>
-    <td id="hd2"> Butter Kulcha </td>
-    <td id="hd2"> Dal Khichdi </td>
-  </tr>
-<tr>
-  <td id ="pp">Shredded Cuts of cottage cheese and capsicum simmered with tomatoes and onion gravy </td>    
-  <td id ="pp">Flatbread with salted butter </td>  
-  <td id ="pp">(A healthy Indian comfort food prepared from rice, dal and spices sauted in freshly made ghee) </td>
- 
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-    </tr>
- <tr>
-  <td id="hd2">Veg Kofta</td>
- <td id="hd2">Butter Naan </td> 
- <td id="hd2">Veg Biryani</td> 
- </tr>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td id="hd2">Chilli Coconut </td>
+        <td id="hd2">Pan fried Sweet potato </td>
+      </tr>
 
- <tr>
-  <td id ="pp">Our signature style of Kofta curry </td>
-  <td id ="pp">Deliciously chewy flour made breads with butter </td>
-  <td id ="pp">Rice cooked with loaded veggies with a strong dominance of the flavours of spices</td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
-   <tr>
-    <td id="hd2">Veg Kadai</td>
-   <td id="hd2">Cheese Naan </td> 
-   <td id="hd2">Kaju Mutter Pulao </td> 
-   </tr>
+      <tr>
+        <td id="pp">Flavored coconut broth with ginger, chilli, corn and broccoli </td>
+        <td id="pp">Grilled sweet potato with homemade Indie spice </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td id="hd2">Roasted Tomato Soup</td>
+        <td id="hd2">Fiery Potatoes </td>
+      </tr>
 
- <tr>
-  <td id ="pp">Combination of capsicum, tomato, onion and traditional indian spices over Indian wok  </td>
-  <td id ="pp">Flatbread with mouth watering cheese toppings</td>
-  <td id ="pp">Delicious cashew-peas combination rice, served hot with a special raitha</td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
+      <tr>
+        <td id="pp">Rich, bold, and flavorful Tomato Soup made with roasted cherry tomatoes, garlic, and basil. </td>
+        <td id="pp">Wedges tossed into spicy onion chilli combination </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </table>
+  </section>
 
-  <tr>
-    <td id="hd2">Hyderabadi Kholapuri</td>
-   <td id="hd2">Paratha  </td> 
-   <td id="hd2">Jeera Rice  </td> 
-   </tr>
+  <section id="two">
+    <table class="dinner" width="100%">
 
- <tr>
-  <td id ="pp">Assoeortment of fresh veggies with Kholapuri chilli sauce</td>
-  <td id ="pp">Punjabi style Rotis with a twisted taste of spices </td>
-  <td id ="pp">A mouthwatering dish consisting of rice and cumin seeds </td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
+      <tr id="hd">
+        <th>Sabji</th>
+        <th>Indian Breads</th>
+        <th>Chawal Ki Dawat (Rice)</th>
+      </tr>
+      <tr>
+        <td id="hd2">Hari Makai Khas </td>
+        <td id="hd2">Tandoori Roti </td>
+        <td id="hd2">Veg Pulao </td>
+      </tr>
 
-  <tr>
-    <td id="hd2">Paneer Tikka </td>
-   <td id="hd2">Roti Ki Tokri  </td> 
-   <td id="hd2">Mughali Biryani  </td> 
-   </tr>
+      <tr>
+        <td id="pp">American Corns Tossed in Aromatic Spinach Gravy </td>
+        <td id="pp">A round flatbread made from wholemal flour </td>
+        <td id="pp">Cooked fragrant basmati rice with aromatic spices, herbs and sometimes stock. </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
 
- <tr>
-  <td id ="pp">Tandoori roasted cottage cheese chunks, dunked in rich onion-tomato gravy</td>
-  <td id ="pp">(Assorted offering of five different types of Indian Breads) </td>
-  <td id ="pp">A mild, lightly spiced, dum cooked & layered biryani made with rice, spices, mix veggies and dry fruits.</td>
-  </tr>
-  <tr>
-    <td> </td>
-    <td> </td>
-  </tr>
-  </table>
-</section>
+      <tr>
+        <td id="hd2"> Bhindi Do Pyaza </td>
+        <td id="hd2"> Hari Mirch ki Roti </td>
+        <td id="hd2">Tawa Pulav </td>
+      </tr>
 
-<section id="three">
-  <div class="des">
-<p id="hd3">Gulab Jamun</p>
-<p id ="pp2"></p>>old delight made with khoya, fried golden and finally dipped in saffron induced sugar syrup</p>
+      <tr>
+        <td id="pp">Finger cut okra and onion Cooked in garlic with special indian masala </td>
+        <td id="pp">Soft roti seasoned with chillies for an exquisite dine </td>
+        <td id="pp">Pulav cooked with the flavours of pav bhaji masala and served steaming hot </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td id="hd2"> Paneer kurchan </td>
+        <td id="hd2"> Butter Kulcha </td>
+        <td id="hd2"> Dal Khichdi </td>
+      </tr>
+      <tr>
+        <td id="pp">Shredded Cuts of cottage cheese and capsicum simmered with tomatoes and onion gravy </td>
+        <td id="pp">Flatbread with salted butter </td>
+        <td id="pp">(A healthy Indian comfort food prepared from rice, dal and spices sauted in freshly made ghee) </td>
 
-<p id="hd3">Kesar Kulfi</p>
-<p id ="pp2">Frozen dessert that is sinfully rich, dense and creamy with saffron, cardamom, pistachio and almonds.</p>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td id="hd2">Veg Kofta</td>
+        <td id="hd2">Butter Naan </td>
+        <td id="hd2">Veg Biryani</td>
+      </tr>
 
-<p id="hd3">Malai Ghevar</p>
-<p id ="pp2">old delight made with khoya, fried golden and finally dipped in saffron induced sugar syrup</p>
+      <tr>
+        <td id="pp">Our signature style of Kofta curry </td>
+        <td id="pp">Deliciously chewy flour made breads with butter </td>
+        <td id="pp">Rice cooked with loaded veggies with a strong dominance of the flavours of spices</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td id="hd2">Veg Kadai</td>
+        <td id="hd2">Cheese Naan </td>
+        <td id="hd2">Kaju Mutter Pulao </td>
+      </tr>
 
-<p id="hd3">Rasmalai Tiramisu </p>
-<p id ="pp2">Disc-shaped dessert from Rajasthan</p>
+      <tr>
+        <td id="pp">Combination of capsicum, tomato, onion and traditional indian spices over Indian wok </td>
+        <td id="pp">Flatbread with mouth watering cheese toppings</td>
+        <td id="pp">Delicious cashew-peas combination rice, served hot with a special raitha</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
 
-<p id="hd3">Kheer (Indian Rice Pudding)</p>
-<p id ="pp2">Cardamom-scented Indian rice pudding with a thick, creamy base</p>
-</div>
-</section>
+      <tr>
+        <td id="hd2">Hyderabadi Kholapuri</td>
+        <td id="hd2">Paratha </td>
+        <td id="hd2">Jeera Rice </td>
+      </tr>
+
+      <tr>
+        <td id="pp">Assoeortment of fresh veggies with Kholapuri chilli sauce</td>
+        <td id="pp">Punjabi style Rotis with a twisted taste of spices </td>
+        <td id="pp">A mouthwatering dish consisting of rice and cumin seeds </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+
+      <tr>
+        <td id="hd2">Paneer Tikka </td>
+        <td id="hd2">Roti Ki Tokri </td>
+        <td id="hd2">Mughali Biryani </td>
+      </tr>
+
+      <tr>
+        <td id="pp">Tandoori roasted cottage cheese chunks, dunked in rich onion-tomato gravy</td>
+        <td id="pp">(Assorted offering of five different types of Indian Breads) </td>
+        <td id="pp">A mild, lightly spiced, dum cooked & layered biryani made with rice, spices, mix veggies and dry
+          fruits.</td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="three">
+    <div class="des">
+      <p id="hd3">Gulab Jamun</p>
+      <p id="pp2"></p>>old delight made with khoya, fried golden and finally dipped in saffron induced sugar syrup</p>
+
+      <p id="hd3">Kesar Kulfi</p>
+      <p id="pp2">Frozen dessert that is sinfully rich, dense and creamy with saffron, cardamom, pistachio and almonds.
+      </p>
+
+      <p id="hd3">Malai Ghevar</p>
+      <p id="pp2">old delight made with khoya, fried golden and finally dipped in saffron induced sugar syrup</p>
+
+      <p id="hd3">Rasmalai Tiramisu </p>
+      <p id="pp2">Disc-shaped dessert from Rajasthan</p>
+
+      <p id="hd3">Kheer (Indian Rice Pudding)</p>
+      <p id="pp2">Cardamom-scented Indian rice pudding with a thick, creamy base</p>
+    </div>
+  </section>
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="{% static '/css/Contactus.css' %}" rel="stylesheet">
+    <title>CONTACT US</title>
+
+</head>
+
+<body>
+    <div class="contactcontainer">
+        <span><a href="{% url 'home' %}">
+                <img class="logo" src="{% static 'images/2.1.png' %}" alt="logo" width="50" height="50">
+        </span>
+        </a>
+        <h1>CONTACT US</h1>
+
+        <ul>
+            <li><span class="hello-msg">Namaste, {{request.user}}
+                    <a class="logout" href="{% url 'logout' %}">Logout</a></span>
+            </li>
+        </ul>
+
+    </div>
+    <div class="bordercontact">
+    </div>
+    <div>
+        <img class="bgimg" src="{% static 'images/resturi.jpeg' %}">
+    </div>
+
+    <footer>
+        hello im footer
+    </footer>
+</body>
+
+</html>

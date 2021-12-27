@@ -1,54 +1,41 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Indian Plate</title>
-    <script src="button.js"></script>
-    <link href="{% static '/css/homepage.css' %}" rel="stylesheet" />
-  </head>
-  <header>
-    <a href="{% url 'home' %}">
-      <img
-        class="logo"
-        src="{% static 'images/2.1.png' %}"
-        alt="logo"
-        width="50"
-        height="50"
-      />
-    </a>
-    <img
-      class="main"
-      src="{% static 'images/The Indian Kitchen.png' %}"
-      alt="logo"
-      width="400"
-      height="400"
-    />
-    <nav>
-      <ul class="nav_links">
-        <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="{% url 'login' %}">Sign in</a></li>
-        <li><a href="{% url 'register' %}">Sign up</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <div class="cont"></div>
-  <body>
-    <div class="buttons">
-      <div class="container">
-        <a href="{% url 'dashboard' %}" class="btn effect01">Get Started</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Indian Plate</title>
+  <script src="button.js"></script>
+  <link href="{% static '/css/homepage.css' %}" rel="stylesheet" />
+</head>
+<header>
+  <a href="{% url 'home' %}">
+    <img class="logo" src="{% static 'images/2.1.png' %}" alt="logo" width="50" height="50" />
+  </a>
+  <img class="main" src="{% static 'images/The Indian Kitchen.png' %}" alt="logo" width="400" height="400" />
+  <nav>
+    <ul class="nav_links">
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'login' %}">Sign in</a></li>
+      <li><a href="{% url 'register' %}">Sign up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="cont"></div>
+
+<body>
+  <div class="buttons">
+    <div class="container">
+      <a href="{% url 'dashboard' %}" class="btn effect01">Get Started</a>
     </div>
-
-    <a href="{% url 'home' %}">
-      <img
-        class="contact"
-        src="{% static 'images/contact.png' %}"
-        alt="logo"
-        width="120"
-      />
+  </div>
+  <div>
+    <a href="{% url 'Contactus' %}">
+      <img class="contact" src="{% static 'images/contact.png' %}" alt="logo" width="120" />
     </a>
-  </body>
+  </div>
+</body>
+
 </html>
