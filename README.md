@@ -7,9 +7,10 @@ Restuarant Landing Page, Made with Django framework and MySQL Database, in pytho
     Create User Account.
     Access the food Menu only when logged in. 
     User Account Type Support (e.g. Staff Account, Client Account).
-    Table Reservations and Cancellation. 
-    Dedicated Structured Database
-    Modern UI with Tailwind CSS
+    Table Reservations and Cancellation.
+    Leave Reviews and Rating.  
+    Dedicated Structured Database.
+    Modern UI with Tailwind CSS.
  ## Prerequisites
 
     Be sure you have the following installed on your development machine:
