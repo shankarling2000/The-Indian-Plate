@@ -1,5 +1,5 @@
 # The-Indian-Plate
-Restuarant Landing Page. 
+Restuarant Landing Page, Made with Django framework and MySQL Database, in python.  
 
 
  ## Features
